@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      nav {
+        padding: 10px;
+        height: 8vh;
+        width: 100%;
+        background-color: #333;
+        color: white;
+      }
+      nav h3 {
+        height: 100%;
+        float: left;
+      }
+      nav ul {
+        float: right;
+      }
+      .meta {
+        font-size: 11px;
+      }
+      article {
+        margin-bottom: 20px;
+      }
+      article h3,
+      article .article-p {
+        margin: 7px;
+      }
+      article img {
+        height: 10vh;
+        width: 10vh;
+        border-radius: 50%;
+      }
+      main {
+        padding: 15px;
+        margin: 10px;
+      }
+      #aside {
+        height: 800px;
+        position: sticky;
+        right: 0;
+        top: 30vh;
+        margin: 15px;
+        float: right;
+        max-width: 20vw;
+      }
+      .clr {
+        overflow: auto;
+      }
+      @media (max-width: 550px) {
+        #aside {
+          position: absolute;
+          visibility: hidden;
+          float: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h3>LOGO</h3>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="clr"></div>
+    <aside id="aside">
+      <div class="side-articles">
+        <h3 class="side-title">New Post</h3>
+        <p class="side-p">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
+          perspiciatis!
+        </p>
+      </div>
+      <div class="side-articles">
+        <h3 class="side-title">New Post</h3>
+        <p class="side-p">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
+          perspiciatis!
+        </p>
+      </div>
+      <div class="side-articles">
+        <h3 class="side-title">New Post</h3>
+        <p class="side-p">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
+          perspiciatis!
+        </p>
+      </div>
+      <div class="side-articles">
+        <h3 class="side-title">New Post</h3>
+        <p class="side-p">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
+          perspiciatis!
+        </p>
+      </div>
+    </aside>
+    <main>
+      <article>
+        <h3>Article Title</h3>
+
+        <img src="https://source.unsplash.com/random" alt="" />
+        <p class="meta">Author: John Doe &nbsp; Added:20/11</p>
+        <p class="article-p">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut,
+          voluptates exercitationem nesciunt, repudiandae quae voluptas ducimus
+          eum obcaecati fugiat rem qui dolores ea doloremque quis incidunt,
+          aperiam illum facere natus voluptate amet minima ipsum pariatur
+          assumenda. Minima animi ratione vero.
+        </p>
+      </article>
+      <article>
+        <h3>Article Title</h3>
+
+        <img src="https://source.unsplash.com/random" alt="" />
+        <p class="meta">Author: John Doe &nbsp; Added:20/11</p>
+        <p class="article-p">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut,
+          voluptates exercitationem nesciunt, repudiandae quae voluptas ducimus
+          eum obcaecati fugiat rem qui dolores ea doloremque quis incidunt,
+          aperiam illum facere natus voluptate amet minima ipsum pariatur
+          assumenda. Minima animi ratione vero.
+        </p>
+      </article>
+      <article>
+        <h3>Article Title</h3>
+
+        <img src="https://source.unsplash.com/random" alt="" />
+        <p class="meta">Author: John Doe &nbsp; Added:20/11</p>
+        <p class="article-p">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut,
+          voluptates exercitationem nesciunt, repudiandae quae voluptas ducimus
+          eum obcaecati fugiat rem qui dolores ea doloremque quis incidunt,
+          aperiam illum facere natus voluptate amet minima ipsum pariatur
+          assumenda. Minima animi ratione vero.
+        </p>
+      </article>
+      <article>
+        <h3>Article Title</h3>
+
+        <img src="https://source.unsplash.com/random" alt="" />
+        <p class="meta">Author: John Doe &nbsp; Added:20/11</p>
+        <p class="article-p">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut,
+          voluptates exercitationem nesciunt, repudiandae quae voluptas ducimus
+          eum obcaecati fugiat rem qui dolores ea doloremque quis incidunt,
+          aperiam illum facere natus voluptate amet minima ipsum pariatur
+          assumenda. Minima animi ratione vero.
+        </p>
+      </article>
+    </main>
+  </body>
+</html>

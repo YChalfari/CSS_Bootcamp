@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        width: 100vw;
+        height: 100vh;
+        background-color: #333;
+      }
+      .box-inner {
+        background-color: springgreen;
+        height: 50px;
+        width: 50px;
+        top: 0;
+        right: 0;
+      }
+      .box {
+        position: absolute;
+        border: black 2px solid;
+      }
+      .box1 {
+        background-color: green;
+        height: 30vh;
+        width: 30vw;
+        top: 0;
+        left: 0;
+      }
+      .box2 {
+        background-color: purple;
+        height: 35vh;
+        width: 30vw;
+        top: 15vh;
+        left: 15vw;
+      }
+      .box3 {
+        background-color: salmon;
+        height: 25vh;
+        width: 90vw;
+        bottom: 35vh;
+      }
+      .box4 {
+        background-color: slategrey;
+        height: 90vh;
+        width: 15vw;
+        right: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1 box">div one</div>
+    <div class="box2 box">
+      div two
+      <div class="box box-inner">hi</div>
+    </div>
+    <div class="box3 box">div three</div>
+    <div class="box4 box">div four</div>
+  </body>
+</html>

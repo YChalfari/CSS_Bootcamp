@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS Positioning</title>
+    <style>
+      body {
+        height: 1500px;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        border: 1px black solid;
+      }
+
+      .container {
+        position: relative;
+        width: 500px;
+        height: 500px;
+        background: #333;
+      }
+      #box-1 {
+        position: relative;
+        top: 50px;
+        left: 50px;
+        background: crimson;
+        /* z-index shows higher indexes in front
+        so box 1 is on top of container div */
+        z-index: 1;
+      }
+      #box-2 {
+        position: absolute;
+        top: 100px;
+        left: 100px;
+
+        background: blue;
+      }
+      #box-3 {
+        position: absolute;
+        bottom: 100px;
+        right: 100px;
+        background: purple;
+      }
+      #box-4 {
+        /* Fixed takes it out of the flow of elements so it doesnt
+        take up space, anything ahead of it would be on top of it
+        but it remains in the same place on the viewport
+        so if you scroll it would show up as long as nothing is covering it */
+        position: fixed;
+        background: salmon;
+      }
+      #box-5 {
+        position: sticky;
+        top: 0px;
+        background: greenyellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box" id="box-1"></div>
+    <div class="container">
+      <div class="box" id="box-2"></div>
+      <div class="box" id="box-3"></div>
+    </div>
+
+    <div class="box" id="box-4"></div>
+    <div class="box" id="box-5"></div>
+  </body>
+</html>

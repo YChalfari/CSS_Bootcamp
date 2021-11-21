@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #333;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      .btn {
+        display: block;
+        transition: all 1s ease-in-out;
+        padding: 10px 30px;
+        margin: 30px auto;
+        color: white;
+        background-color: #229932;
+        border: #229932 2px solid;
+      }
+      .btn:hover {
+        opacity: 0.7;
+      }
+      .round {
+        border-radius: 10px;
+      }
+      .ghost {
+        background-color: transparent;
+      }
+      .ghost:hover {
+        transform: rotate(360deg);
+        transition: all 0.8s ease-in-out;
+        opacity: 1;
+        background-color: #229932;
+      }
+    </style>
+  </head>
+  <body>
+    <button type="button" class="btn">Register</button>
+    <button type="submit" class="btn round">Register</button>
+    <button type="reset" class="btn ghost">Register</button>
+    <button type="submit" class="btn round ghost">Register</button>
+  </body>
+</html>
