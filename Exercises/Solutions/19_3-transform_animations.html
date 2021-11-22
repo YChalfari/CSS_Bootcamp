@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        height: 100vh;
+        width: 100vw;
+        align-items: center;
+        justify-content: space-around;
+        padding: 15px;
+      }
+      .container {
+        overflow: hidden;
+      }
+      .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 60px;
+        width: 130px;
+        border: 1px black solid;
+        margin: 0px;
+      }
+
+      .translateY::after,
+      .translate::before,
+      .rotate::before,
+      .scale::after {
+        content: "";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        height: 60px;
+        width: 130px;
+        transition: all 0.8s ease-in-out;
+      }
+      .translateY::after {
+        top: 0;
+        content: "YEAH!";
+        background-color: red;
+        visibility: hidden;
+        transform: translateY(-60px);
+      }
+      .translateY:hover::after {
+        transform: translateY(0);
+        visibility: visible;
+        transition: all 0.8s ease-in-out;
+      }
+      .scale::after {
+        content: "Scale & Opacity";
+        background-color: black;
+        color: #fff;
+        opacity: 0;
+        transform: scale(1.5);
+      }
+      .scale:hover::after {
+        opacity: 1;
+        transform: scale(1);
+        transition: all 0.8s ease-in-out;
+      }
+      .translate::before {
+        content: "Translate";
+        color: #fff;
+        background-color: #333;
+        transform: translate(-130px);
+      }
+
+      .translate:hover::before {
+        transform: translate(0);
+      }
+      .rotate {
+        z-index: 2;
+      }
+      .rotate::before {
+        transform: translate(-70px, -100px) rotate(-90deg);
+        background-color: yellow;
+        z-index: -1;
+      }
+      .rotate:hover::before {
+        transform: translate(0) rotate(0);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box rotate">Rotate</div>
+    </div>
+    <div class="container">
+      <div class="box translate">Translate</div>
+    </div>
+    <div class="container">
+      <div class="box scale">Scale & Opacity</div>
+    </div>
+    <div class="container">
+      <div class="box translateY">TransaleY</div>
+    </div>
+  </body>
+</html>
