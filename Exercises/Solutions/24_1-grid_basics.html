@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .grid-container {
+        display: grid;
+        gap: 1rem;
+
+        grid-template-areas:
+          "h h h h"
+          "a m m m"
+          "f f f f";
+      }
+      .item {
+        background-color: red;
+        border-radius: 8px;
+      }
+      .i1 {
+        grid-area: h;
+        grid-column: span 2;
+        height: 15vh;
+        width: 48vw;
+      }
+      .i2 {
+        grid-column: span 2;
+        width: 48vw;
+        background-color: purple;
+      }
+      .i3 {
+        height: 500px;
+        width: 20vw;
+        grid-area: a;
+        background-color: green;
+      }
+      .i4 {
+        grid-area: m;
+        background-color: #333;
+      }
+      .i5 {
+        height: 15vh;
+        grid-area: f;
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="item i1">item1</div>
+      <div class="item i2">item2</div>
+      <div class="item i3">item3</div>
+      <div class="item i4">item4</div>
+      <div class="item i5">item5</div>
+    </div>
+  </body>
+</html>
