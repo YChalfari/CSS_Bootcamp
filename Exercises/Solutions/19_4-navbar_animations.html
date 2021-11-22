@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: yellow;
+      }
+      #nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 20vh;
+        box-shadow: 5px 0 5px gray;
+      }
+      .nav-container {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .links {
+        display: flex;
+        list-style: none;
+      }
+      .link-container {
+        /*  */
+        width: fit-content;
+        margin: 0 15px;
+        padding: 10px;
+        overflow: hidden;
+      }
+      .link {
+        position: relative;
+        color: black;
+        font-weight: 550;
+        text-decoration: none;
+      }
+      .link::before,
+      .link::after {
+        content: "";
+        position: absolute;
+        border-top: 1px black solid;
+        height: 100%;
+        width: 100%;
+        transition: all 0.8s ease-in-out;
+      }
+      .link::before {
+        transform: translateX(-130%);
+      }
+      .link::after {
+        transform: translateX(30%);
+        border-top: none;
+        border-bottom: 1px black solid;
+      }
+      .link:hover::before {
+        transform: translateX(0);
+      }
+      .link:hover::after {
+        transform: translate(-100%);
+      }
+      @media (max-width: 600px) {
+        .nav-container {
+          flex-direction: column;
+        }
+        .links {
+          margin: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="nav">
+      <div class="nav-container">
+        <h3 class="logo">Whee!</h3>
+        <ul class="links">
+          <li class="link-container"><a href="" class="link">Home</a></li>
+          <li class="link-container"><a href="" class="link">About</a></li>
+          <li class="link-container"><a href="" class="link">Contact</a></li>
+          <li class="link-container"><a href="" class="link">Store</a></li>
+        </ul>
+      </div>
+    </nav>
+  </body>
+</html>
