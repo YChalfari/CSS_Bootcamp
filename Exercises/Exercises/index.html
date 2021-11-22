@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        padding: 10px;
+        display: flex;
+        background-color: #333;
+        width: 100vw;
+        color: greenyellow;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .logo {
+        margin: 15px;
+      }
+      ul {
+        list-style: none;
+        display: flex;
+      }
+      ul a {
+        color: greenyellow;
+        text-decoration: none;
+        margin: 15px;
+      }
+      ul a:hover {
+        border-bottom: greenyellow 1px solid;
+      }
+      @media (max-width: 500px) {
+        .container {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        ul {
+          flex-direction: column;
+        }
+        ul a {
+          display: block;
+          width: fit-content;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="container">
+      <h3 class="logo">APPLESEEDS</h3>
+      <ul class="nav-links">
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Portfolio</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
