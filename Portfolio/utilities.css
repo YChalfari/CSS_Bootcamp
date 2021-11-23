@@ -1,0 +1,86 @@
+* {
+  max-width: 100vw;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+/* colors, bg, and font styles */
+.bg-primary {
+  background-color: rgba(255, 255, 0, 0.938);
+  color: black;
+}
+.bg-dark {
+  background-color: #030e12;
+  color: #fff;
+}
+.bg-secondary {
+  background-color: #5bccf6;
+  color: #000;
+}
+.bg-light {
+  background-color: #f4f4f4;
+  color: #000;
+}
+.font-thin {
+  font-size: 1.1rem;
+  font-weight: lighter;
+  margin-bottom: 15px;
+  max-width: 500px;
+}
+.font-thin::first-letter {
+  font-size: 1.5rem;
+  font-weight: 550;
+  color: rgba(255, 255, 0, 0.938);
+}
+.font-bold {
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.font-p {
+}
+
+/* Sections General */
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* text-align: center; */
+  width: 100vw;
+  min-height: 30vh;
+  padding: 10px;
+}
+.section-title {
+  font-size: 2rem;
+  letter-spacing: 2px;
+  padding: 30px;
+  margin-bottom: 10px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #353535;
+  font-size: 2rem;
+  color: #f4f4f4;
+  box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem,
+    rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  transition: all 500ms;
+  overflow: hidden;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card:hover {
+  box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em,
+    rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+  transform: scale(1.05);
+}
